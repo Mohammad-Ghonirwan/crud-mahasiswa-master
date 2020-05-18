@@ -34,11 +34,11 @@ $row = mysqli_fetch_array($result);
   </head>
   <body>
     <div class="container">
-      <form action="update-dosen.php" method="POST">
+      <form action="update-mahasiswa.php" method="POST">
         <fieldset>
           <legend>Edit Data Mahasiswa :</legend>
           Nama :<br>
-          <input type="hidden" name="id_dosen" value="<?php echo $row['id_dosen']; ?>">
+          <input type="hidden" name="id_mahasiswa" value="<?php echo $row['id_mahasiswa']; ?>">
           <input type="text" class="input" name="nama" value="<?php echo $row['nama']; ?>"><br>
           Alamat Email :<br>
           <input type="text" class="input" name="email" value="<?php echo $row['email']; ?>"><br>
